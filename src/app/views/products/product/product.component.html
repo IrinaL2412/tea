@@ -1,0 +1,16 @@
+<div class="collection py-5">
+  <div class="container py-5">
+    <h1 class="fs-2 fw-bold text-center mb-5">Наши чайные коллекции</h1>
+    <div class="collection-products d-flex flex-column align-items-center mx-auto  ">
+        <a class="card-image w-25">
+          <img src="{{product.image}}" class="card-img-top" alt="image tea {{i}}">
+        </a>
+        <div class="card-body w-75 text-center">
+          <h5 class="card-title fw-bold mb-4">{{product.title}}</h5>
+          <p class="card-text pb-3 fw-bold">Цена: {{product.price | currency:'RUB':'symbol':'1.0'}}</p>
+          <p class="card-text pb-3">{{product.description}}</p>
+          <a [routerLink]="'/order'" [queryParams]="{product: product.title}" class="btn btn-primary hvr-wobble-horizontal px-lg-5">Купить</a>
+        </div>
+    </div>
+  </div>
+</div>

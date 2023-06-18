@@ -1,0 +1,22 @@
+.ui-accordion-header-icon {
+  width: 25px;
+  height: 25px;
+  fill: white;
+  position: absolute;
+  top: 32%;
+  right: 3%;
+}
+
+.accordion-button.collapsed > svg {
+  transform: rotate(180deg);
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+@media screen and (max-width: 418px) {
+  .ui-accordion-header-icon {
+    display: none;
+  }
+}

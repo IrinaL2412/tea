@@ -1,0 +1,10 @@
+<div class="card col-8 col-sm-12 col-md-12 col-lg-12 mx-auto">
+  <a class="card-image">
+    <img src="{{product.image}}" class="card-img-top" alt="image tea {{i+1}}">
+  </a>
+  <div class="card-body">
+    <h5 class="card-title fw-bold">{{product.title}}</h5>
+    <p class="card-text pb-3">{{product.description | productCardDescription}}</p>
+    <a [routerLink]="['/products', product.id]" class="btn btn-primary hvr-wobble-horizontal px-lg-5">Подробнее</a>
+  </div>
+</div>

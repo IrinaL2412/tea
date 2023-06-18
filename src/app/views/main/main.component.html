@@ -1,0 +1,136 @@
+<ng-template #popup let-modal>
+  <div class="modal-header">
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.close()"></button>
+  </div>
+  <div class="modal-body text-center">
+    Посмотрите наши чайные коллекции
+  </div>
+  <div class="modal-footer d-flex justify-content-center">
+    <button type="button" [routerLink]="'/products'" class="btn btn-primary" data-bs-dismiss="modal" (click)="modal.close()">Смотреть</button>
+  </div>
+</ng-template>
+
+<div class="main pb-5 pt-4">
+  <div class="container">
+    <div class="slider-tea-container m-auto pt-5">
+      <div class="slider-tea">
+        <div>
+          <img class="w-100" src="../../../assets/images/image_slider_1.png" alt="image 1">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="answers py-4 pb-5">
+  <div class="container pb-5">
+    <h1 class="mb-5 fw-bold fs-2 text-center">Ответы на часто задаваемые вопросы</h1>
+
+
+    <div ngbAccordion [closeOthers]="true" class="accordion col-md-8 m-auto">
+      <div ngbAccordionItem class=" border-0">
+        <h3 ngbAccordionHeader>
+          <button ngbAccordionButton class="fw-bold rounded-3 py-3 p-md-4 bg-primary text-white mt-3">
+            Собираете ли вы подарочные боксы?
+            <svg class="ui-accordion-header-icon" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+            </svg>
+          </button>
+        </h3>
+        <div ngbAccordionCollapse>
+          <div ngbAccordionBody>
+            <ng-template>
+              Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
+            </ng-template>
+          </div>
+        </div>
+      </div>
+      <div ngbAccordionItem class=" border-0">
+        <h3 ngbAccordionHeader>
+          <button ngbAccordionButton class="fw-bold rounded-3 py-3 p-md-4 bg-primary text-white mt-3">
+            Сколько у вас разновидностей чая?
+            <svg class="ui-accordion-header-icon" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+            </svg>
+          </button>
+        </h3>
+        <div ngbAccordionCollapse>
+          <div ngbAccordionBody>
+            <ng-template>
+              <p> В нашем ассортименте 6 видов чая:</p>
+              <ul class="mb-0">
+                <li>Детокс чай лайм</li>
+                <li>Ягодный чай</li>
+                <li>Цветочный чай</li>
+                <li>Очищающий чай</li>
+                <li>Кислый чай</li>
+                <li>Лимонная мята</li>
+              </ul>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+      <div ngbAccordionItem class=" border-0">
+        <h3 ngbAccordionHeader>
+          <button ngbAccordionButton class="fw-bold rounded-3 py-3 p-md-4 bg-primary text-white mt-3">
+            В какой срок осуществляется доставка?
+            <svg class="ui-accordion-header-icon" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+            </svg>
+          </button>
+        </h3>
+        <div ngbAccordionCollapse>
+          <div ngbAccordionBody>
+            <ng-template>
+              Доставка осуществляется в течение 3 рабочих дней от даты поступления оплаты за заказ.
+            </ng-template>
+          </div>
+        </div>
+      </div>
+      <div ngbAccordionItem class=" border-0">
+        <h3 ngbAccordionHeader>
+          <button ngbAccordionButton class="fw-bold rounded-3 py-3 p-md-4 bg-primary text-white mt-3">
+            У вас обновляется ассортимент?
+            <svg class="ui-accordion-header-icon" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+            </svg>
+          </button>
+        </h3>
+        <div ngbAccordionCollapse>
+          <div ngbAccordionBody>
+            <ng-template>
+              Каждый месяц в нашем магазине появляются новые продукты.
+            </ng-template>
+          </div>
+        </div>
+      </div>
+      <div ngbAccordionItem class=" border-0">
+        <h3 ngbAccordionHeader>
+          <button ngbAccordionButton class="fw-bold rounded-3 py-3 p-md-4 bg-primary text-white mt-3">
+            Какого объема у вас пачки чая?
+            <svg class="ui-accordion-header-icon" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+            </svg>
+          </button>
+        </h3>
+        <div ngbAccordionCollapse>
+          <div ngbAccordionBody>
+            <ng-template>
+              У нас можно заказать пачку чая объёмом 250 грамм.
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
